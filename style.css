@@ -1,3 +1,11 @@
+/* 
+CSS - Cascading Style Sheet
+*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap'); */ /* import Cabin font */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Sofia+Sans&display=swap'); /* import Cabin & Sofia font */
+
+
 /* apply css reset */
 
 *, * ::before, * ::after {
@@ -36,6 +44,7 @@ img { /* improve media defaults */
 .col-1 {
   width: 460px;
   margin-top: 124px;
+  font-family: 'Cabin', sans-serif;
 }
 
 .col-2 {
@@ -43,6 +52,7 @@ img { /* improve media defaults */
   /* height: 680px; */
   background-color: #fff;
   padding: 40px;
+  font-family: 'Sofia Sans', sans-serif;
 }
 
 img {
@@ -93,4 +103,12 @@ img {
 .col-2 p {
   text-align: center;
 }
+
+
+
+
+/* FONT STYLING IN CSS */
+/* 
+font weight - thin (300), normal/regular (400), semi-bold (500-600), bold (700), strong (800), black (900)
+*/
 
