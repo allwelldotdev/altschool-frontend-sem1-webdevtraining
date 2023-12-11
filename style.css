@@ -20,3 +20,77 @@ img { /* improve media defaults */
 
 /* start CSS here */
 
+.container {
+  background-color: rgba(46, 196, 181, 0.04);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  gap: 120px;
+}
+
+.col-1 {
+  width: 460px;
+  margin-top: 124px;
+}
+
+.col-2 {
+  width: 580px;
+  /* height: 680px; */
+  background-color: #fff;
+  padding: 40px;
+}
+
+img {
+  margin-bottom: 50px;
+}
+
+.header-text {
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* repeat(<how many times>, <value>) */
+  grid-template-rows: repeat(3, 72px);
+  grid-auto-rows: 72px;
+  row-gap: 30px;
+  column-gap: 24px;
+  margin-bottom: 30px;
+}
+
+.grid-item-7, .grid-item-8 {
+  /* grid-column-start: 1;
+  grid-column-end: -1; */
+  grid-column: 1 / -1;
+
+}
+
+/* DEVELOPER PRODUCTIVITY - SEPERATION OF CONCERNS */
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.grid-container input, .grid-container select {
+  /* padding: 14px 16px 14px 16px; */ /* top right bottom left */
+  padding: 14px 16px; /* top & bottom (or block values) | left & right (or inline values) */
+  /* padding-block: 14px;
+  padding-inline: 16px; */
+}
+
+.btn {
+  margin-bottom: 16px;
+}
+
+.col-2 p {
+  text-align: center;
+}
+
