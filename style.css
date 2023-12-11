@@ -61,6 +61,17 @@ img {
 
 .header-text {
   margin-bottom: 20px;
+  font-size: 2.5rem; /* root font size | by default is 16px = 1rem | 40px = 2.5rem */
+  font-weight: 700;
+  letter-spacing: -.8px;
+  line-height: 1.25; /* line height in pixels is the ratio of font size divided by line height: 50px/40px = 1.25 */
+  color: #000B0A;
+}
+
+.lead-text {
+  font-size: 1rem;
+  line-height: 1.5625;
+  color: #737373;
 }
 
 .grid-container {
@@ -102,8 +113,14 @@ img {
 
 .col-2 p {
   text-align: center;
+  font-size: .875rem;
+  line-height: 1.786; /* this is the same as 25px (25px / font-size '14px') */
+  font-weight: 500;
 }
 
+a {
+  color: #2EC4B6;
+}
 
 
 
@@ -112,3 +129,11 @@ img {
 font weight - thin (300), normal/regular (400), semi-bold (500-600), bold (700), strong (800), black (900)
 */
 
+
+
+.grid-container label {
+  font-size: .875rem; /* this is the same as 14px */
+  font-weight: 600;
+  letter-spacing: .1px;
+  color: #011C34;
+}
