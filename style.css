@@ -52,16 +52,22 @@ img { /* improve media defaults */
   /* height: 680px; */
   background-color: #fff;
   padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 50px 0 rgba(4, 8, 19, 0.1);
+}
+
+.col-2, .col-2 *, .col-2 *::before, .col-2 *::after {
   font-family: 'Sofia Sans', sans-serif;
 }
 
 img {
+  width: 77px;
   margin-bottom: 50px;
 }
 
 .header-text {
   margin-bottom: 20px;
-  font-size: 2.5rem; /* root font size | by default is 16px = 1rem | 40px = 2.5rem */
+  font-size: 2.5rem; /* root font size = rem | by default is 16px = 1rem | 40px = 2.5rem || we use rem for accessibility */
   font-weight: 700;
   letter-spacing: -.8px;
   line-height: 1.25; /* line height in pixels is the ratio of font size divided by line height: 50px/40px = 1.25 */
@@ -105,7 +111,22 @@ img {
   padding: 14px 16px; /* top & bottom (or block values) | left & right (or inline values) */
   /* padding-block: 14px;
   padding-inline: 16px; */
+
+  border: 1px solid #F0F0F0;
 }
+
+.grid-container input:active,
+.grid-container input:focus,
+.grid-container input:focus-within,
+.grid-container select:active,
+.grid-container select:focus,
+.grid-container select:focus-within {
+  outline: none;
+  outline: 1px solid #2EC4B6;
+  border-radius: 4px;
+  box-shadow: 0 0 0 3px rgba(46, 196, 181, 0.1); /* x-offset | y-offset | blur | spread | color */
+}
+
 
 .btn {
   margin-bottom: 16px;
@@ -120,6 +141,26 @@ img {
 
 a {
   color: #2EC4B6;
+}
+
+button {
+  width: 100%;
+  padding-block: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .2px;
+  color: white;
+  background-color: #2EC4B6;
+  border: none;
+  line-height: normal;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 200ms ease; /* all/'name of the element in change' - background-color | time in ms/s | transition effect - linear, ease, ease-in-out, ease-in, ease-out */
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.10);
+}
+
+button:hover {
+  background-color: #011C34;
 }
 
 
