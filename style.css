@@ -132,6 +132,14 @@ img {
   box-shadow: 0 0 0 3px rgba(46, 196, 181, 0.1); /* x-offset | y-offset | blur | spread | color */
 }
 
+select {
+  appearance: none;
+  /* background-image: url("img/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: 95% center; */
+  background: url("img/dropdown.svg") 95% center no-repeat;
+}
+
 
 .btn {
   margin-bottom: 16px;
@@ -182,6 +190,28 @@ font weight - thin (300), normal/regular (400), semi-bold (500-600), bold (700),
   font-weight: 600;
   letter-spacing: .1px;
   color: #011C34;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  /* appearance: none; */
+  -webkit-appearance: none;
+  moz-appearance: none;
+  margin: 0;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="date"] {
+  background: url("img/date.svg") 95% center no-repeat;
+}
+
+input[type="password"] {
+  background: url("img/eye.svg") 96% center no-repeat;
 }
 
 
