@@ -178,3 +178,47 @@ font weight - thin (300), normal/regular (400), semi-bold (500-600), bold (700),
   letter-spacing: .1px;
   color: #011C34;
 }
+
+
+/* BUILDING FOR MOBILE RESPONSIVENESS */
+
+/* .row {
+  flex-wrap: wrap;
+} */
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 90%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .col-1 {
+    width: auto;
+    margin-top: unset;
+  }
+
+  .col-2 {
+    width: 100%;
+  }
+
+  .container {
+    height: unset;
+  }
+
+  img {
+    width: 39px;
+    margin-bottom: 40px;
+  }
+
+  .header-text {
+    font-size: 1.875rem;
+  }
+}
+
