@@ -40,7 +40,14 @@
               </div>
               <div class="grid-item grid-item-4">
                 <label for="dob">Date of Birth</label>
-                <input type="date" required />
+                <input
+                  type="text"
+                  id="dob"
+                  placeholder="Select here"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='text')"
+                  required
+                />
               </div>
               <div class="grid-item grid-item-5">
                 <label for="weight">Weight (KG)</label>
